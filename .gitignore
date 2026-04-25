@@ -1,0 +1,22 @@
+```
+# .NET build and obj directories
+**/bin/
+**/obj/
+**/obj/**
+obj/Debug/net10.0/calendar-dashboard.AssemblyInfo.cs
+obj/Debug/net10.0/calendar-dashboard.AssemblyInfoInputs.cache
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.cache
+
+# NuGet restore artifacts
+.nuget/
+
+# Temporary directories
+**/Debug/
+**/Release/
+**/net-*
+```
