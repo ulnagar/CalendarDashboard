@@ -5,9 +5,3 @@ The main view of the application will be three rows, with each row consisting of
 
 # Architecture
 The project should be a .NET Core Blazor application, targetting dotnet v10. The project should use an SQLite database for a data store. It should include a docker compose file as it will be hosted using Docker on a homelab server. 
-
-# Code Styles
-Use File Scoped namespaces only.
-Namespace declaration should be the first line in a .cs file, with all using declarations coming after.
-All classes should be sealed by default.
-Remove any unused using statements.

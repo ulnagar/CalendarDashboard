@@ -2,9 +2,8 @@ namespace CalendarDashboard.Models;
 
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-public class Appointment
+public sealed class Appointment
 {
     [Key]
     public int Id { get; set; }
@@ -14,7 +13,7 @@ public class Appointment
     public string Title { get; set; } = string.Empty;
 
     [Required]
-    public DateTime StartTime { get; set; }
+    public DateTime StartTime { get;set; }
 
     [Required]
     public DateTime EndTime { get; set; }

@@ -1,9 +1,8 @@
 namespace CalendarDashboard.Models;
 
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-public class AppointmentMember
+public sealed class AppointmentMember
 {
     [Key]
     public int Id { get; set; }
