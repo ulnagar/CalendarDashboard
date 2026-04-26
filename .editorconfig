@@ -1,0 +1,35 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = crlf
+charset = utf-8
+
+[*.{cs,vb}]
+# Code style rules
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_property = false:silent
+dotnet_style_require_accessibility_modifiers = always:silent
+dotnet_separate_import_directive_groups = true
+
+[*.cs]
+# New line preferences
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+
+# Indentation preferences
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+
+# Modifier preferences
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
+
+# Custom settings
+#IDE0161: Convert to file-scoped namespace
+csharp_style_namespace_declarations = file_scoped:warning
+# IDE0065: Place 'using' directives inside the namespace
+csharp_using_directive_placement = inside_namespace:warning
